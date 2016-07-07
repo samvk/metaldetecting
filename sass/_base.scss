@@ -1,0 +1,52 @@
+// ==========================================================================
+// BASE RULES
+// ==========================================================================//
+@import "compass/css3";
+
+//************ Fonts ************//
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+
+//************ Base styling ************//
+//base reset
+html, body {margin:0;padding:0;height:100%;}
+
+p {margin: 0;}
+
+body {
+    //prevent cursor from making scrollbars
+    overflow: hidden;
+}
+
+a {
+    //design
+    color: inherit;
+    text-decoration: none;
+
+    //transitions
+    @include transition(color 150ms linear);
+
+    &:hover {
+        //design
+        color: #FDC401;
+    }
+}
+
+//prevent all images from being selected
+img {
+    @include user-select(none);
+
+    -webkit-user-drag: none;
+    user-drag: none;
+
+    -webkit-touch-callout: none;
+}
+
+.sandbox {
+    //design
+    background-image: url(../img/sand.png);
+    cursor: none;
+
+    //layout
+    height: 100%;
+    width: 100%;
+}

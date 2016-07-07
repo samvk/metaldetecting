@@ -1,0 +1,49 @@
+// ==========================================================================
+// CURSOR RULES
+// ==========================================================================//
+
+.cursor {
+    //design
+    background: url(../img/cursor.png) no-repeat center;
+    opacity: 1;
+
+    //layout
+    position: absolute;
+    z-index: 100;
+
+    width: 256px;
+    height: 256px;
+
+    @media screen and (max-width: 767px) {
+        //design
+        background-size: 128px;
+        opacity: 0;//cursor fadesInOut on mobile only
+    }
+}
+
+.cursor.is-searching {
+    transform: translate(0); //cursor shake
+    animation: shake 600ms cubic-bezier(.36,.07,.19,.97) both, fade 600ms normal;
+}
+
+//cursor shake
+@include keyframes(shake) {
+    30%, 70% {
+        @include transform(translate(-12px));
+    }
+    50% {
+        @include transform(translate(12px));
+    }
+}
+
+//cursor fadesInOut on mobile only
+@media screen and (max-width: 767px) {
+    @include keyframes(fade) {
+        0%, 100% {
+            @include opacity(0);
+        }
+        67% {
+            @include opacity(1);
+        }
+    }
+}

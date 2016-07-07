@@ -1,0 +1,115 @@
+// ==========================================================================
+// TREASURE RULES
+// ==========================================================================//
+
+//*************** Treasure styling ***************//
+.treasure {
+    //design
+    opacity: 0;
+
+    //layout
+    position: absolute;
+    z-index: 200; //treasure clickable above cursor
+    padding: 30px 20px; //padding to make cursor more accurate
+
+    @media screen and (max-width: 767px) {
+        //layout
+        padding: 15px 10px; //padding to make cursor more accurate
+    }
+}
+
+.treasure.is-found {
+    //design
+    opacity: 1;
+
+    //layout
+    z-index: 50; //move treasure below cursor
+
+    //transitions
+    @include transition(opacity 1300ms ease);
+}
+
+//**** Treasure positions ****//
+.coin {
+    //layout
+    bottom: 18%;
+    left: 8%;
+
+    width: 80px;
+    height: 80px;
+
+    @media screen and (max-width: 767px) {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.bottlecap {
+    //layout
+    top: 24%;
+    left: 20%;
+
+    width: 100px;
+    height: 100px;
+
+    @media screen and (max-width: 767px) {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.coil {
+    //layout
+    top: 50%;
+    left: 36%;
+
+    width: 180px;
+    height: 88px;
+
+    @media screen and (max-width: 767px) {
+        width: 90px;
+        height: 44px;
+    }
+}
+
+.nail {
+    //layout
+    top: 14%;
+    right: 34%;
+
+    width: 160px;
+    height: 48px;
+
+    @media screen and (max-width: 767px) {
+        width: 80px;
+        height: 24px;
+    }
+}
+
+.ring {
+    //layout
+    bottom: 8%;
+    right: 18%;
+
+    width: 124px;
+    height: 124px;
+
+    @media screen and (max-width: 767px) {
+        width: 62px;
+        height: 62px;
+    }
+}
+
+.hook {
+    //layout
+    top: 28%;
+    right: 10%;
+
+    width: 140px;
+    height: 140px;
+
+    @media screen and (max-width: 767px) {
+        width: 70px;
+        height: 70px;
+    }
+}
