@@ -1,0 +1,86 @@
+// ==========================================================================
+// PARCHMENT RULES
+// ==========================================================================//
+
+.parchment {
+    //text
+    font: 4vmin / 1.5 'Berkshire Swash', cursive; //vmin for responsive parchment size
+
+    //design
+    background: url(../img/parchment.png) center / contain no-repeat;
+    cursor: default;
+    
+    //layout
+    position: absolute;
+    z-index: 300;
+    
+    top: calc(44% + 56px); //prevent header underlap
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    height: calc(90% - 56px);
+    
+    //transition
+    @include transition(all 600ms ease);
+}
+
+.parchment-list__container {
+    position: relative;
+    top: 50%;
+}
+
+.parchment-list {
+    //design
+    list-style-type: lower-roman;
+    white-space: nowrap;
+
+    //layout
+    transform: translate(10%, -70%); // -50%(y) to center plus some more to position better on parchment
+    padding: 0;
+    margin-left: 5em;
+    margin-right: 5em;
+    
+    transform: translate(10%, -70%)
+}
+
+[data-treasure-item].is-checked {
+    text-decoration: line-through;
+}
+
+.parchment__close-icon {
+    //design
+    color: #FED239;
+    cursor: pointer;
+    border-radius: 50%;
+
+    //layout
+    position: absolute;
+    padding: 1em;
+    top: -1.8em;
+    right: -1.8em;
+    
+    //transitions
+    @include transition(color 150ms ease);
+
+    &:hover {
+        //design
+        color: #FDC401;
+    }
+}
+
+.parchment.is-minimized {
+    //text
+    font-size: 0.7vmin; //shrink parchment size
+    
+    //design
+    cursor: pointer;
+    
+    //layout
+    top: 90%; //move parchment to bottom
+    height: 15%;
+    
+    //disable close icon
+    .parchment__close-icon {
+        pointer-events: none;
+    }
+}

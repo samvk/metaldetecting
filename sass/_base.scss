@@ -5,6 +5,7 @@
 
 //************ Fonts ************//
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Berkshire+Swash);
 
 //************ Base styling ************//
 //base reset
@@ -12,9 +13,19 @@ html, body {margin:0;padding:0;height:100%;}
 
 p {margin: 0;}
 
+body, p, li {
+    color: #0B0B0B;
+    
+    //default design changes to feel more game-like
+    @include user-select(none);
+}
+
+html { background-image: url(../img/sand.png); }
+
 body {
     //prevent cursor from making scrollbars
     overflow: hidden;
+    
 }
 
 a {
@@ -43,7 +54,6 @@ img {
 
 .sandbox {
     //design
-    background-image: url(../img/sand.png);
     cursor: none;
 
     //layout

@@ -9,17 +9,23 @@ header {
     text-align: center;
 
     //design
-    color: #FED239;
     background: #262626;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     backface-visibility: hidden; //prevent blur on animation
-    @include user-select(none);
 
     //layout
     position: fixed;
     z-index: 500;
     width: 100%;
+}
+
+.title {
+    //design
+    color: #FED239;
+    
+    //layout
+    transform: translateX(-14px); //keep distance from back arrow
 }
 
 .back-button {

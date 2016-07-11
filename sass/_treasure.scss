@@ -14,7 +14,7 @@
 
     @media screen and (max-width: 767px) {
         //layout
-        padding: 15px 10px; //padding to make cursor more accurate
+        padding: 0;
     }
 }
 
@@ -30,21 +30,7 @@
 }
 
 //**** Treasure positions ****//
-.coin {
-    //layout
-    bottom: 18%;
-    left: 8%;
-
-    width: 80px;
-    height: 80px;
-
-    @media screen and (max-width: 767px) {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-.bottlecap {
+.treasure[data-treasure="bottlecap"] {
     //layout
     top: 24%;
     left: 20%;
@@ -58,7 +44,35 @@
     }
 }
 
-.coil {
+.treasure[data-treasure="nail"] {
+    //layout
+    top: calc(20px + 12%);
+    right: 34%;
+
+    width: 160px;
+    height: 48px;
+
+    @media screen and (max-width: 767px) {
+        width: 80px;
+        height: 24px;
+    }
+}
+
+.treasure[data-treasure="penny"] {
+    //layout
+    bottom: 18%;
+    left: 8%;
+
+    width: 80px;
+    height: 80px;
+
+    @media screen and (max-width: 767px) {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.treasure[data-treasure="coil"] {
     //layout
     top: 50%;
     left: 36%;
@@ -72,35 +86,7 @@
     }
 }
 
-.nail {
-    //layout
-    top: 14%;
-    right: 34%;
-
-    width: 160px;
-    height: 48px;
-
-    @media screen and (max-width: 767px) {
-        width: 80px;
-        height: 24px;
-    }
-}
-
-.ring {
-    //layout
-    bottom: 8%;
-    right: 18%;
-
-    width: 124px;
-    height: 124px;
-
-    @media screen and (max-width: 767px) {
-        width: 62px;
-        height: 62px;
-    }
-}
-
-.hook {
+.treasure[data-treasure="hook"] {
     //layout
     top: 28%;
     right: 10%;
@@ -111,5 +97,19 @@
     @media screen and (max-width: 767px) {
         width: 70px;
         height: 70px;
+    }
+}
+
+.treasure[data-treasure="ring"] {
+    //layout
+    bottom: 10%;
+    right: 14%;
+
+    width: 124px;
+    height: 124px;
+
+    @media screen and (max-width: 767px) {
+        width: 62px;
+        height: 62px;
     }
 }
