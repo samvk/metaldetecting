@@ -302,6 +302,7 @@ header {
 
 .parchment__close-icon {
   color: #FED239;
+  text-shadow: 2px 2px 3px #000000;
   cursor: pointer;
   border-radius: 50%;
   position: absolute;

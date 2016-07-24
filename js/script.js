@@ -3,7 +3,7 @@
 
 $(document).ready(function () {
     "use strict";
-
+    console.log("b");
     //Cursor rules
     {
         let cursorIsFrozen = false;
@@ -11,8 +11,8 @@ $(document).ready(function () {
         $(document).click(function () {
             cursorIsFrozen = true;
             //cursor animate on click
-            $(".cursor").addClass("is-searching").one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function () { //on end of animation
-                $(".cursor").removeClass("is-searching");
+            $(".cursor").addClass("is-searching").one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function () {
+                $(this).removeClass("is-searching");
                 cursorIsFrozen = false; //unfreeze cursor position after animation
             });
         });

@@ -6,7 +6,7 @@
     //design
     background: url(../img/cursor.png) no-repeat center;
     opacity: 1;
-    visibility: hidden;//cursor only visible inside sandbox
+    visibility: hidden; //cursor only visible inside sandbox
 
     //layout
     position: absolute;
@@ -18,7 +18,7 @@
     @media screen and (max-width: 767px) {
         //design
         background-size: 128px;
-        opacity: 0;//cursor fadesInOut on mobile only
+        opacity: 0; //cursor fadesInOut on mobile only
     }
 }
 
@@ -37,10 +37,10 @@
 //cursor shake
 @include keyframes(shake) {
     30%, 70% {
-        @include transform(translate(-12px));
+        transform: translate(-12px));
     }
     50% {
-        @include transform(translate(12px));
+        transform: translate(12px));
     }
 }
 

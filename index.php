@@ -3,34 +3,34 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<meta name="author" content="Sam Kauffman">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="Sam Kauffman">
     <meta name="description" content="Let's go metal detecting.">
-    <meta name="theme-color" content="#FDC401">
+    <meta name="theme-color" content="#262626">
 
-	<title>The Treasure Hunter</title>
+    <title>The Treasure Hunter</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#000000">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#262626">
 
-	<!-- Custom Fonts -->
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-	
-	<!-- Custom CSS -->
-	<link href="css/style.css"  rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
 	
 	<header>
-		<p class="title"><a href="../" title="Find all 6?">The Treasure Hunter</a></p>
-		<a class="back-button" href="../" title="Find all 6?"><span class="fa fa-reply"></span></a>
+		<p class="title"><a href="../">The Treasure Hunter</a></p>
+		<a class="back-button" href="../"><span class="fa fa-reply"></span></a>
 	</header>
 
 	<section class="sandbox">
@@ -64,7 +64,7 @@
 
 	<!-- jQuery -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-	<script>window.jQuery || document.write("<script src='../js/jquery.min.js'><\/script>")</script>
+	<script>window.jQuery || document.write("<script src='/js/jquery.min.js'><\/script>")</script>
 
 	<!-- Javascript -->
 	<script src="js/script.js"></script>
