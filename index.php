@@ -22,7 +22,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 
 </head>
 
@@ -67,7 +67,7 @@
 	<script>window.jQuery || document.write("<script src='/js/jquery.min.js'><\/script>")</script>
 
 	<!-- Javascript -->
-	<script src="js/script.js"></script>
+	<script src="js/script.min.js"></script>
 
 </body>
 

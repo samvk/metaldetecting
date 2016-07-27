@@ -10,6 +10,7 @@
 
     //layout
     position: absolute;
+    transform: translate(-50%, -50%); //cursor shake
     z-index: 100;
 
     width: 256px;
@@ -30,17 +31,16 @@
 }
 
 .cursor.is-searching {
-    transform: translate(0); //cursor shake
     animation: shake 600ms cubic-bezier(.36,.07,.19,.97) both, fade 600ms normal;
 }
 
 //cursor shake
 @include keyframes(shake) {
     30%, 70% {
-        transform: translate(-12px));
+        transform: translate(calc(-50% - 12px), -50%);
     }
     50% {
-        transform: translate(12px));
+        transform: translate(calc(-50% + 12px), -50%);
     }
 }
 
