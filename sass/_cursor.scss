@@ -4,7 +4,7 @@
 
 .cursor {
     //design
-    background: url(../img/cursor.png) no-repeat center;
+    background: url("../img/cursor.png") no-repeat center;
     opacity: 1;
     visibility: hidden; //cursor only visible inside sandbox
 
@@ -48,10 +48,10 @@
 @media screen and (max-width: 767px) {
     @include keyframes(fade) {
         0%, 100% {
-            @include opacity(0);
+            opacity: 0;
         }
         67% {
-            @include opacity(1);
+            opacity: 1;
         }
     }
 }

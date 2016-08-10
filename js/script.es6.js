@@ -11,7 +11,7 @@ $(document).ready(function () {
         $(document).click(function () {
             cursorIsFrozen = true;
             //cursor animate on click
-            $(".cursor").addClass("is-searching").one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function () {
+            $(".cursor").addClass("is-searching").one("webkitAnimationEnd MSAnimationEnd oanimationend animationend", function () {
                 $(this).removeClass("is-searching");
                 cursorIsFrozen = false; //unfreeze cursor position after animation
             });

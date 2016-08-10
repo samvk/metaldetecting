@@ -53,9 +53,14 @@ img {
   height: 100%;
   width: 100%;
 }
+@media screen and (max-width: 767px) {
+  .sandbox {
+    cursor: pointer;
+  }
+}
 
 .cursor {
-  background: url(../img/cursor.png) no-repeat center;
+  background: url("../img/cursor.png") no-repeat center;
   opacity: 1;
   visibility: hidden;
   position: absolute;
