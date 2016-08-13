@@ -22,6 +22,7 @@
     
     //transition
     @include transition(all 600ms ease);
+    will-change: top, height;
 }
 
 .parchment-list__container {

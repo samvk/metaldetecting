@@ -40,7 +40,6 @@ $(document).ready(function () {
     //Parchment rules
     $(".parchment.is-minimized").click(function (e) {
         $(this).removeClass("is-minimized");
-        console.log("click-makebig");
     });
 
     $(".parchment__close-icon").click(function (e) {
